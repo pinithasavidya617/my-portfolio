@@ -558,19 +558,16 @@
     <!-- AOS JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-      // Respect user reduced motion and avoid heavy animations on small screens
+      
       const prefersReduced = window.matchMedia(
         "(prefers-reduced-motion: reduce)"
       ).matches;
 
       AOS.init({
-        // global settings
-        duration: 700, // sensible default ms
+        duration: 700, 
         easing: "ease-out-cubic",
-        once: true, // animate only once when scrolled into view
-        mirror: false, // do not animate elements when scrolling past them again
-        // disable AOS if user prefers reduced motion or on small screens
-        
+        once: true, 
+        mirror: false, 
       });
     </script>
 
@@ -584,3 +581,4 @@
     </script>
   </body>
 </html>
+
